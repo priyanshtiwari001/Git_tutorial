@@ -36,7 +36,15 @@ Github is a online tool that used for contribution or collobration. It just prov
 
 - `git restore --staged <filename>` - if you modified the file and moved into staging area and wwant to revert back modified file or (to discard changes in working directory)
 
-`git branch` - to see other branches in the repo.
+- `git branch` - to see other branches in the repo.
+
+- `git branch` - to see other branches in the repo.
+
+- `git checkout -b <nameOfBranch>` - to create the branch
+
+- `git checkout <branchName>` - to swtich btw the branches
+
+- `git merge <branchName>` - to merge your branch into master branch
 
 - `rm -rf .git` - if you dont want to manage by the git so just delete `.git` .
 
@@ -197,3 +205,10 @@ Branching means you can maintain multiple state of our project.
 
 `git branch` - to see other branches in the repo.
 `git checkout -b <nameOfBranch>` - to create the branch
+`git checkout <branchName>` - to swtich btw the branches
+
+```
+NOTE: whenever we create a new branch all changes or commited we did before creating the new branch those will be avilable in new Branch.
+```
+
+`git merge <branchName>` - to merge your branch into master branch
