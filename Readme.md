@@ -28,7 +28,14 @@ Github is a online tool that used for contribution or collobration. It just prov
 
 - `git add <fileName>` - it start the tracking the changes in your file .
 
-- `git commit  -m '<message>' ` -
+- `git commit  -m '<message>' ` - to add the new version.
+
+- `git cat-file <flag> <hash>` - to see the flag(-t> type of object & -p> print the object) and the content of the file
+
+- `git rm --cached <filename>` - if you pushed into staging area and revert back into untracked area.
+
+- `git restore --staged <filename>` - if you modified the file and moved into staging area and wwant to revert back modified file or (to discard changes in working directory)
+
 - `rm -rf .git` - if you dont want to manage by the git so just delete `.git` .
 
 ---
@@ -37,13 +44,13 @@ Github is a online tool that used for contribution or collobration. It just prov
 
 git --> hashing --> graph/tree data strucuture
 
-- git is key, value stores.
+- git is like key, value stores.
   - key - hash of the data.
   - value - data.
 - git uses cryptographic hashing function - SHA-1 hashing algorithem for a given data it outputs 40digit hexadecimal no and the hash value is always same for the same data.
 - once hash prepared, git compress your data in a blob and stores some metadata about data.
 
-> Blob Object
+  > Blob Object
 
 |        |        |
 | ------ | ------ |
@@ -154,3 +161,15 @@ xK??OR04`?H???Wp?,?4?c%
 
 - To see what inside the `.git/objects/` we cant use directly the `cat <fileHashName`.
   instead we need to use the `git cat-file -p <fileHashName>`
+
+  - _Imp_: whenever two file have identical data , git is not gonna make new key hash .
+
+  ```
+  eg- let say, we have two files name as : test.js and test1.js and both file has same data. so what git will do it will not gonna key a new key hash .
+
+
+  ```
+
+  - `.git` internally does a lots of optimization , to store the object in compressed form.
+
+- `.git` mainly store the data about the change & algorithemically shows us the file content with that change.
