@@ -36,6 +36,8 @@ Github is a online tool that used for contribution or collobration. It just prov
 
 - `git restore --staged <filename>` - if you modified the file and moved into staging area and wwant to revert back modified file or (to discard changes in working directory)
 
+`git branch` - to see other branches in the repo.
+
 - `rm -rf .git` - if you dont want to manage by the git so just delete `.git` .
 
 ---
@@ -173,3 +175,25 @@ xK??OR04`?H???Wp?,?4?c%
   - `.git` internally does a lots of optimization , to store the object in compressed form.
 
 - `.git` mainly store the data about the change & algorithemically shows us the file content with that change.
+
+### What is Branch?
+
+![](./img/01%20Git%20branch.svg)
+
+Before dicussing about the branching, let say why we have branching concept in git.
+SO
+Let's say we have a project and we are building very smoothly and we are workin in a team. One of the team member has a idea like let's build a blah blah features that do blah blah task.
+and now we are building the blah blah features in the same repo or project. now we committed our file or project that we are building. (note that : our project is still in building phase only )
+
+After someday, we are checking our blah blah features that we were building and want to add some more coding lines. But the issue here is that we have to check the whole commit history or our whole code base where we build our blah blah feature.
+
+Here, Branching concept introduce
+What branching do is that it helps to create a seperate branch or we can say that it make a repo that we can work parallely. It is not dependent from main repo. Now , we can build our blah blah feature here indendently without dependent on main repo or file.
+
+**OR**
+Branching means you can maintain multiple state of our project.
+
+### How we can create branching in git?
+
+`git branch` - to see other branches in the repo.
+`git checkout -b <nameOfBranch>` - to create the branch
