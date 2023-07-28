@@ -38,13 +38,15 @@ Github is a online tool that used for contribution or collobration. It just prov
 
 - `git branch` - to see other branches in the repo.
 
-- `git branch` - to see other branches in the repo.
-
 - `git checkout -b <nameOfBranch>` - to create the branch
 
 - `git checkout <branchName>` - to swtich btw the branches
 
 - `git merge <branchName>` - to merge your branch into master branch
+
+- `git branch -d  local_branch_name` - to delete the branch from local
+
+- `git push remote_name -d remote_branch_name` - to delete the branch from remote
 
 - `rm -rf .git` - if you dont want to manage by the git so just delete `.git` .
 
