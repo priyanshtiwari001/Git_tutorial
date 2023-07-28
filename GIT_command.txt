@@ -1,0 +1,74 @@
+1. pwd  (present working directory command)
+2. ls (list content)
+3. cd (change directory)
+4. type "q" then enter
+----------------------------------------------------------
+1. git status  (to check the status/uncommited changes.)
+2. git init   (to make git repos)
+3. git add --a  (means add all change/add will be stage. or to track)
+4. git add "first.txt"  (add particular file)
+5. git commit -m "type message" (to commit stages)
+6. git log (commit history check)
+   git log -p (kya cheej remove or add hue h, sub kuch show kr dega)
+   git log -p -n (type number place of 'n' to check n number of log)
+   git log --stat (in sort show details)
+   git log --pretty=<oneline/short/full> (in single lines or short or full)
+   git log --since=n.<days/weeks/months/years> (n is days, utna deen ka log dekha dega)
+   git log --pretty=format:"%h -- %an" (git-scm.com/docs/git-log)(website)
+7. git clone <git link> <folder name>
+----------------------------------------------------------
+1. rm -rf .git  (delete repos -danger command)
+----------------------------------------------------------
+green color:-> staging are
+red color:-> working directory
+----------------------------------------------------------
+1. touch <file name> (to create file by linux command)
+   mkdir <folder name>  (to create folder)
+2. .gitignore  (write file name in this to untrack on that)
+3. (*.log)  (in gitignore to ignore this types of extension)
+4. git diff --staged (compare working director to staging area)
+5. git diff --staged (compare last commit to staging area)
+6. git commit -a -m "NAME" (direct commit tracked file no need to use git add command, but not for untracked file for this you have to add yourself in tracking area...)
+7. git rm <file name>  (to remove file and it will stage it also, so relax)
+8. git  mv <current file name> <changed name type> (it will change file namy be using git command, and it will stage it also, so relax)
+9. git rm --cached <file name> (to untrack a file )
+10. mkdir <folder name> (to create new folder(
+----------------------------------------------------------
+1. git commit --amend {1.(esc)-2.(:wq + enter)} (to change last message)
+----------------------------------------------------------
+1. git restore --staged <file name> (stage to unstage)
+   git restore <file>  (to discard changes in working directory)
+2. git checkout -- <filename> (to restore last change in that file)
+3. git checkout -f (to restore last working directory)
+----------------------------------------------------------
+1. SHIFT + INSERT (to paste in git bash(cannot use CTRL+V)
+-----------------------------------------------------------
+###########################################################
+
+  +++++how to create SSH KEY by using GIT BASH++++
+
+1. ssh-keygen -t ed25519 -C "your_email@example.com"
+2. eval "$(ssh-agent -s)"
+3. ssh-add ~/.ssh/id_ed25519
+4. tail ~/.ssh/id_rsa.pub
+5. then copy the key and paste in git key section
+#6. git push -u <origin master> #
+###########################################################
+-----------------------------------------------------------  
+###########################################################
+         +++++alias(create your own shortcuts)++++
+
+1. git config --global alias.<cmd name> '<for what name>'
+ 
+     ex. git config --global alias.st status
+   -----------------------------------------
+2. git config --global --unset alias.<NAME>
+
+    ex. git config --global --unset alias.st
+###########################################################
+----------------------------------------------------------- 
+1. 
+2. 
+3. 
+4. 
+5. 

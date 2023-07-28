@@ -34,7 +34,7 @@ Github is a online tool that used for contribution or collobration. It just prov
 
 - `git rm --cached <filename>` - if you pushed into staging area and revert back into untracked area.
 
-- `git restore --staged <filename>` - if you modified the file and moved into staging area and wwant to revert back modified file or (to discard changes in working directory)
+- `git restore --staged <filename>` - if you modified the file and moved into staging area and wwant to revert back into unstage file or (to discard changes in working directory)
 
 - `git branch` - to see other branches in the repo.
 
@@ -49,6 +49,26 @@ Github is a online tool that used for contribution or collobration. It just prov
 - `git push remote_name -d remote_branch_name` - to delete the branch from remote
 
 - `git clone gitURL` - to clone the git repo
+
+- `git add --a` - (means add all change/add will be stage. or to track)
+
+- `git log -p` - (kya cheej remove or add hue h, sub kuch show kr dega)
+
+-`git log -p -n` - (type number place of 'n' to check n number of log)
+
+- `git log --stat` - (in sort show details)
+
+-`git rm <file name> ` - (to remove file and it will stage it also, so relax)
+
+- `git  mv <current file name> <changed name type>` - (it will change file name be using git command, and it will stage it also, so relax)
+
+-`git commit -a -m "NAME"` - (direct commit tracked file no need to use git add command, but not for untracked file for this you have to add yourself in tracking area...)
+
+- `git restore <file>` - (to discard changes in working directory)
+
+- `git checkout -- <filename>` - (to restore last change in that file)
+
+- `git checkout -f` - (to restore last working directory)
 
 - `rm -rf .git` - if you dont want to manage by the git so just delete `.git` .
 
@@ -190,7 +210,7 @@ xK??OR04`?H???Wp?,?4?c%
 
 ### What is Branch?
 
-![](./img/01%20Git%20branch.svg)
+![](./01%20Git%20branch.svg)
 
 Before dicussing about the branching, let say why we have branching concept in git.
 SO
