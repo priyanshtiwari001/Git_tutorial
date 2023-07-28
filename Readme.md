@@ -59,7 +59,7 @@ git --> hashing --> graph/tree data strucuture
 - git is like key, value stores.
   - key - hash of the data.
   - value - data.
-- git uses cryptographic hashing function - SHA-1 hashing algorithem for a given data it outputs 40digit hexadecimal no and the hash value is always same for the same data.
+- git uses cryptographic hashing function - SHA-1 hashing algorithm for a given data it outputs 40digit hexadecimal no and the hash value is always same for the same data.
 - once hash prepared, git compress your data in a blob and stores some metadata about data.
 
   > Blob Object
@@ -214,3 +214,7 @@ NOTE: whenever we create a new branch all changes or commited we did before crea
 ```
 
 `git merge <branchName>` - to merge your branch into master branch
+
+- STANDARD WAY OF ADDING THE BRANCH INTO THE MASTER BRANCH
+
+  - create branch > made some changes then > push our branch into github > then raise the pull request so that we can get the approval from the other team to add in our master branch.
