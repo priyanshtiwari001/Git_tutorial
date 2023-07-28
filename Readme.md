@@ -48,6 +48,8 @@ Github is a online tool that used for contribution or collobration. It just prov
 
 - `git push remote_name -d remote_branch_name` - to delete the branch from remote
 
+- `git clone gitURL` - to clone the git repo
+
 - `rm -rf .git` - if you dont want to manage by the git so just delete `.git` .
 
 ---
